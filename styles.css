@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+
+  font-family: 'Open Sans', helvetica, arial, sans-serif;
+  font-size: 16px;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 1500px;
+  padding: 20px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  background: #eee;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+
+  max-width: 470px;
+  max-height: 300px;
+  background-color: #fff;
+
+  border-style: solid;
+  border-width: 2px;
+  border-color: #aaa;
+  border-radius: 5px;
+
+  margin-bottom: 10px;
+  padding: 10px;
+
+}
+
+.card__headding {
+  font-size: 1.375rem;
+  line-height: 1.375rem;
+  font-weight: bold;
+
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
+.card_content {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+  overflow: auto;
+  justify-content: space-between;
+}
+
+.card_content__textParagraph {
+  font-size: 1rem;
+  line-height: 1.375rem;
+  /*margin-right: 1rem;*/
+  overflow: auto;
+
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
+
+.card_content__image {
+  margin-left: 1rem;
+  max-width: 150px;
+  max-height: 150px;
+  display: flex;
+  align-items: baseline;
+}
+
+.card_content__image img {
+  min-width: 100%;
+  height: auto;
+}
+
+.card__list {
+  margin-top: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+}
+
+.card__list li {
+  list-style-type: none;
+  margin-right: 0.5rem;
+  font-weight: bold;
+}
